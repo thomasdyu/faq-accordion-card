@@ -1,9 +1,10 @@
 .card {
+    display: flex;
+
     background-color: #ffffff;
     width: 900px;
     height: 500px;
     border-radius: 20px;
-    display: flex;
 
     h1 {
         letter-spacing: 1px;
@@ -45,6 +46,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+
         margin-bottom: 15px;
         cursor: pointer;
     }
@@ -82,7 +84,7 @@
 
     .img-cube {
         position: absolute;
-        left: -130px;
+        left: -90px;
         top: 190px;
         z-index: 100;
     }
