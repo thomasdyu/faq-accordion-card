@@ -19,10 +19,15 @@ body {
   background: linear-gradient(#af67e9 0%, #6565e7 100%);
   background-repeat: no-repeat;
   height: 100vh;
-  width: 100vw;
   font-family: 'Kumbh Sans', sans-serif;
   font-size: 14px;
   font-weight: 400;
+}
+
+@media only screen and (max-width: 1021px) {
+  body {
+    height: 140vh;
+  }
 }
 
 .card {
@@ -31,7 +36,7 @@ body {
   display: flex;
   background-color: #ffffff;
   width: 900px;
-  height: 500px;
+  height: 580px;
   border-radius: 20px;
 }
 
@@ -145,7 +150,6 @@ body {
         -ms-flex-direction: column;
             flex-direction: column;
     max-width: 355px;
-    height: 550px;
   }
   .card .img-col {
     background-image: url(../img/bg-pattern-mobile.svg);
@@ -153,12 +157,15 @@ body {
     background-position: right 50% bottom 100%;
     overflow: visible;
     width: 100%;
+    -webkit-box-flex: 3;
+        -ms-flex-positive: 3;
+            flex-grow: 3;
   }
   .card .img-col .img-women-mobile {
     margin-top: 4rem;
     display: block;
     position: absolute;
-    top: -110px;
+    top: -170px;
     right: 60px;
     z-index: 100;
   }

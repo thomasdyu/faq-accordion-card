@@ -12,8 +12,14 @@ body {
     @include bg-gradient;
     background-repeat: no-repeat;
     height: 100vh;
-    width: 100vw;
+
     font-family: 'Kumbh Sans', sans-serif;
     font-size: 14px;
     font-weight: 400;
 }
+
+@media only screen and (max-width: 1021px) {
+    body {
+        height: 140vh;
+    }
+} ;
