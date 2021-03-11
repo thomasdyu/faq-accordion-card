@@ -10,7 +10,6 @@ body {
     align-items: center;
 
     @include bg-gradient;
-    background-repeat: no-repeat;
     height: 100vh;
     width: 100vw;
     font-family: 'Kumbh Sans', sans-serif;
