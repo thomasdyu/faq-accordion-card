@@ -17,6 +17,7 @@ body {
           align-items: center;
   background: -webkit-gradient(linear, left top, left bottom, from(#af67e9), to(#6565e7));
   background: linear-gradient(#af67e9 0%, #6565e7 100%);
+  background-repeat: no-repeat;
   height: 100vh;
   width: 100vw;
   font-family: 'Kumbh Sans', sans-serif;
@@ -32,12 +33,6 @@ body {
   width: 900px;
   height: 500px;
   border-radius: 20px;
-}
-
-.card h1 {
-  letter-spacing: 1px;
-  margin-bottom: 30px;
-  color: #1d1e35;
 }
 
 .card .img-col {
@@ -59,9 +54,20 @@ body {
   z-index: 10;
 }
 
+.card .img-col .img-women-mobile {
+  display: none;
+}
+
 .card .faq-col {
   padding: 50px;
   width: 50%;
+}
+
+.card .faq-col h1 {
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+  margin-left: 10px;
+  color: #1d1e35;
 }
 
 .card .item-container {
@@ -127,5 +133,54 @@ body {
   left: -90px;
   top: 190px;
   z-index: 100;
+}
+
+@media only screen and (max-width: 1021px) {
+  .card-container {
+    padding: 0 2rem;
+  }
+  .card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    max-width: 355px;
+    height: 550px;
+  }
+  .card .img-col {
+    background-image: url(../img/bg-pattern-mobile.svg);
+    background-size: 70%;
+    background-position: right 50% bottom 100%;
+    overflow: visible;
+    width: 100%;
+  }
+  .card .img-col .img-women-mobile {
+    margin-top: 4rem;
+    display: block;
+    position: absolute;
+    top: -110px;
+    right: 60px;
+    z-index: 100;
+  }
+  .card .img-col .img-women {
+    display: none;
+  }
+  .card .faq-col {
+    padding: 30px;
+    width: 100%;
+  }
+  .card .faq-col h1 {
+    text-align: center;
+    margin-left: 0;
+  }
+  .img-cube {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .card-container {
+    padding: 0;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
